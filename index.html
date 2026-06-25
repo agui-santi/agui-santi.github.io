@@ -1,64 +1,289 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Santiago Agüí Salcedo</title>
-    <style>
-        body {
-            max-width: 800px;
-            margin: 40px auto;
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            padding: 20px;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Santiago Agüí Salcedo — Cosmology</title>
+<style>
+  :root {
+    --paper: #FAF8F3;
+    --ink: #1B1F2E;
+    --deep-space: #1B2A4A;
+    --accent: #B8843E;
+    --slate: #5C6478;
+    --hairline: #E1DCD0;
+  }
 
-        h1 {
-            color: #003366;
-        }
+  * { box-sizing: border-box; }
 
-        nav a {
-            margin-right: 20px;
-            text-decoration: none;
-        }
-    </style>
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Source Sans 3', 'Segoe UI', Arial, sans-serif;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a { color: var(--deep-space); text-decoration: none; border-bottom: 1px solid var(--hairline); }
+  a:hover { color: var(--accent); border-bottom-color: var(--accent); }
+
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 24px; }
+
+  /* ---- Header / cosmic web signature ---- */
+  header {
+    position: relative;
+    padding: 72px 0 40px;
+    overflow: hidden;
+    background: var(--deep-space);
+    color: #F1EDE3;
+  }
+
+  header .web-pattern {
+    position: absolute;
+    inset: 0;
+    opacity: 0.35;
+  }
+
+  header .wrap { position: relative; z-index: 1; }
+
+  .eyebrow {
+    font-size: 13px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #C9B98F;
+    margin: 0 0 10px;
+  }
+
+  h1 {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 38px;
+    font-weight: 600;
+    margin: 0 0 8px;
+    letter-spacing: 0.01em;
+  }
+
+  header p.role {
+    font-size: 17px;
+    color: #D8D2C2;
+    margin: 0 0 28px;
+    max-width: 480px;
+  }
+
+  nav { display: flex; gap: 28px; flex-wrap: wrap; }
+  nav a {
+    color: #EFE9DA;
+    border-bottom: 1px solid rgba(239,233,218,0.35);
+    font-size: 14px;
+    letter-spacing: 0.03em;
+  }
+  nav a:hover { color: #C9B98F; border-bottom-color: #C9B98F; }
+
+  /* ---- Body sections ---- */
+  main { padding: 56px 0 80px; }
+
+  section { margin-bottom: 56px; }
+
+  h2 {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--deep-space);
+    margin: 0 0 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--hairline);
+  }
+
+  .intro {
+    font-size: 17px;
+    color: var(--ink);
+    max-width: 600px;
+  }
+
+  ul.tags {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  ul.tags li {
+    font-size: 14px;
+    padding: 7px 14px;
+    border: 1px solid var(--hairline);
+    border-radius: 999px;
+    color: var(--slate);
+  }
+
+  .project, .pub {
+    padding: 16px 0;
+    border-bottom: 1px solid var(--hairline);
+  }
+  .project:last-child, .pub:last-child { border-bottom: none; }
+
+  .project h3, .pub h3 {
+    font-size: 16px;
+    margin: 0 0 4px;
+    font-weight: 600;
+    color: var(--ink);
+  }
+  .project p, .pub p {
+    margin: 0;
+    font-size: 14.5px;
+    color: var(--slate);
+  }
+  .pub .venue {
+    font-style: italic;
+    color: var(--slate);
+  }
+
+  .status {
+    display: inline-block;
+    font-size: 11.5px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-left: 8px;
+  }
+
+  .contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin-top: 14px;
+    font-size: 15px;
+  }
+
+  footer {
+    padding: 28px 0 48px;
+    text-align: center;
+    color: var(--slate);
+    font-size: 13px;
+  }
+</style>
 </head>
-
 <body>
 
-<h1>Santiago Agüí Salcedo</h1>
+<header>
+  <svg class="web-pattern" viewBox="0 0 720 320" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <g stroke="#C9B98F" stroke-width="0.6" opacity="0.5">
+      <line x1="40" y1="60" x2="160" y2="120"/>
+      <line x1="160" y1="120" x2="120" y2="220"/>
+      <line x1="160" y1="120" x2="280" y2="90"/>
+      <line x1="280" y1="90" x2="380" y2="160"/>
+      <line x1="380" y1="160" x2="320" y2="260"/>
+      <line x1="380" y1="160" x2="500" y2="130"/>
+      <line x1="500" y1="130" x2="610" y2="80"/>
+      <line x1="500" y1="130" x2="560" y2="240"/>
+      <line x1="120" y1="220" x2="240" y2="270"/>
+      <line x1="610" y1="80" x2="690" y2="160"/>
+    </g>
+    <g fill="#EFE9DA">
+      <circle cx="40" cy="60" r="2.4"/>
+      <circle cx="160" cy="120" r="3.2"/>
+      <circle cx="120" cy="220" r="2"/>
+      <circle cx="280" cy="90" r="2.4"/>
+      <circle cx="380" cy="160" r="3.6"/>
+      <circle cx="320" cy="260" r="2"/>
+      <circle cx="500" cy="130" r="2.8"/>
+      <circle cx="610" cy="80" r="2.2"/>
+      <circle cx="560" cy="240" r="2"/>
+      <circle cx="240" cy="270" r="1.8"/>
+      <circle cx="690" cy="160" r="2.2"/>
+    </g>
+  </svg>
+  <div class="wrap">
+    <p class="eyebrow">Department of Astronomy &amp; Astrophysics</p>
+    <h1>Santiago Agüí Salcedo</h1>
+    <p class="role">PhD Candidate in Cosmology, working on the early universe, dark matter, and the large-scale structure it leaves behind.</p>
+    <nav>
+      <a href="#research">Research</a>
+      <a href="#projects">Projects</a>
+      <a href="#publications">Publications</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
 
-<p>
-PhD Candidate in Cosmology
-</p>
+<main class="wrap">
 
-<nav>
-    <a href="#research">Research</a>
-    <a href="#publications">Publications</a>
-    <a href="#contact">Contact</a>
-</nav>
+  <section id="about">
+    <p class="intro">
+      I'm a PhD candidate studying how the universe's largest structures encode signatures of its earliest moments —
+      from primordial non-Gaussianity in inflation to the imprint of dark matter decay on cosmic structure.
+      My work combines theory with large survey datasets like DESI to constrain models of the early universe.
+    </p>
+  </section>
 
-<h2 id="research">Research Interests</h2>
+  <section id="research">
+    <h2>Research Interests</h2>
+    <ul class="tags">
+      <li>Inflation</li>
+      <li>Primordial Non-Gaussianity</li>
+      <li>Dark Matter</li>
+      <li>Large-Scale Structure</li>
+      <li>Cosmological Parameter Estimation</li>
+    </ul>
+  </section>
 
-<ul>
-    <li>Inflation</li>
-    <li>Primordial Non-Gaussianity</li>
-    <li>Dark Matter</li>
-    <li>Large Scale Structure</li>
-    <li>Cosmological Parameter Estimation</li>
-</ul>
+  <section id="projects">
+    <h2>Current Projects</h2>
 
-<h2 id="publications">Current Projects</h2>
+    <div class="project">
+      <h3>Primordial Non-Gaussianity Constraints on Dissipative Inflation</h3>
+      <p>Deriving observational constraints on non-Gaussian signatures predicted by dissipative inflationary models.</p>
+    </div>
 
-<ul>
-    <li>Primordial Non-Gaussianity Constraints on Dissipative Inflation</li>
-    <li>Decaying Dark Matter Cosmology</li>
-    <li>DESI BAO Analysis</li>
-</ul>
+    <div class="project">
+      <h3>Decaying Dark Matter Cosmology</h3>
+      <p>Modeling the impact of dark matter decay on structure formation and late-time cosmological observables.</p>
+    </div>
 
-<h2 id="contact">Contact</h2>
+    <div class="project">
+      <h3>DESI BAO Analysis</h3>
+      <p>Analyzing baryon acoustic oscillation signals from DESI survey data to refine cosmological parameter estimates.</p>
+    </div>
+  </section>
 
-<p>
-Email: your-email@uchicago.edu
-</p>
+  <section id="publications">
+    <h2>Publications</h2>
+
+    <div class="pub">
+      <h3>Title of first paper goes here<span class="status">In preparation</span></h3>
+      <p class="venue">Target journal or arXiv category</p>
+      <p>One-line description of the result.</p>
+    </div>
+
+    <div class="pub">
+      <h3>Title of second paper goes here<span class="status">Preprint</span></h3>
+      <p class="venue">arXiv:XXXX.XXXXX</p>
+      <p>One-line description of the result.</p>
+    </div>
+
+    <p style="font-size:14px; color:var(--slate); margin-top:16px;">
+      Full list on <a href="#">Google Scholar</a> and <a href="#">arXiv</a>.
+    </p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Department of Astronomy &amp; Astrophysics, University of Chicago</p>
+    <div class="contact-links">
+      <a href="mailto:your-email@uchicago.edu">Email</a>
+      <a href="#">Google Scholar</a>
+      <a href="#">ORCID</a>
+      <a href="#">GitHub</a>
+      <a href="#">LinkedIn</a>
+      <a href="#">CV (PDF)</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  &copy; 2026 Santiago Agüí Salcedo
+</footer>
 
 </body>
 </html>
