@@ -47,6 +47,24 @@
 
   header .wrap { position: relative; z-index: 1; }
 
+  .header-inner {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    flex-wrap: wrap;
+  }
+
+  .avatar {
+    width: 104px;
+    height: 104px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid rgba(239,233,218,0.5);
+    flex-shrink: 0;
+  }
+
+  .header-text { flex: 1; min-width: 220px; }
+
   .eyebrow {
     font-size: 13px;
     letter-spacing: 0.14em;
@@ -194,25 +212,40 @@
     </g>
   </svg>
   <div class="wrap">
-    <p class="eyebrow">Department of Astronomy &amp; Astrophysics</p>
-    <h1>Santiago Agüí Salcedo</h1>
-    <p class="role">PhD Candidate in Cosmology, working on the early universe, dark matter, and the large-scale structure it leaves behind.</p>
-    <nav>
-      <a href="#research">Research</a>
-      <a href="#projects">Projects</a>
-      <a href="#publications">Publications</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <div class="header-inner">
+      <img class="avatar" src="profile.jpg" alt="Santiago Agüí Salcedo" onerror="this.style.display='none'">
+      <div class="header-text">
+        <p class="eyebrow">Kavli Institute for Cosmological Physics</p>
+        <h1>Santiago Agüí Salcedo</h1>
+        <p class="role">KICP Fellow at the University of Chicago, working on the early universe, dark matter, and the large-scale structure it leaves behind.</p>
+        <nav>
+          <a href="#about">About</a>
+          <a href="#research">Research</a>
+          <a href="#projects">Projects</a>
+          <a href="#publications">Publications</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </div>
   </div>
 </header>
 
 <main class="wrap">
 
   <section id="about">
+    <h2>About</h2>
     <p class="intro">
-      I'm a PhD candidate studying how the universe's largest structures encode signatures of its earliest moments —
-      from primordial non-Gaussianity in inflation to the imprint of dark matter decay on cosmic structure.
-      My work combines theory with large survey datasets like DESI to constrain models of the early universe.
+      I'm a KICP Fellow at the <a href="https://kavlicosmo.uchicago.edu/">Kavli Institute for Cosmological Physics</a>
+      at the University of Chicago. I completed my PhD in cosmology at the University of Cambridge, supervised by
+      Enrico Pajer and Scott Melville. I started out studying Physics at the Universidad Autónoma de Madrid (UAM),
+      spent my final undergraduate year on exchange at Imperial College London, and completed Part III in Cambridge
+      during the 2020–21 academic year before staying on for my PhD.
+    </p>
+    <p class="intro">
+      My research sits at the intersection of theory and observation: I study how the universe's largest structures
+      encode signatures of its earliest moments, from primordial non-Gaussianity in inflation to the imprint of
+      dark matter decay on cosmic structure, combining open effective field theory techniques with large survey
+      datasets like DESI.
     </p>
   </section>
 
@@ -228,7 +261,7 @@
   </section>
 
   <section id="projects">
-    <h2>Current Projects</h2>
+    <h2>Research Projects</h2>
 
     <div class="project">
       <h3>Primordial Non-Gaussianity Constraints on Dissipative Inflation</h3>
