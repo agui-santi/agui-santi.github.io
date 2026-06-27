@@ -4,182 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Santiago Agüí Salcedo — Cosmology</title>
-<style>
-  :root {
-    --paper: #FAF8F3;
-    --ink: #1B1F2E;
-    --deep-space: #1B2A4A;
-    --accent: #B8843E;
-    --slate: #5C6478;
-    --hairline: #E1DCD0;
-  }
-
-  * { box-sizing: border-box; }
-
-  body {
-    margin: 0;
-    background: var(--paper);
-    color: var(--ink);
-    font-family: 'Source Sans 3', 'Segoe UI', Arial, sans-serif;
-    line-height: 1.65;
-    -webkit-font-smoothing: antialiased;
-  }
-
-  a { color: var(--deep-space); text-decoration: none; border-bottom: 1px solid var(--hairline); }
-  a:hover { color: var(--accent); border-bottom-color: var(--accent); }
-
-  .wrap { max-width: 720px; margin: 0 auto; padding: 0 24px; }
-
-  /* ---- Header / cosmic web signature ---- */
-  header {
-    position: relative;
-    padding: 72px 0 40px;
-    overflow: hidden;
-    background: var(--deep-space);
-    color: #F1EDE3;
-  }
-
-  header .web-pattern {
-    position: absolute;
-    inset: 0;
-    opacity: 0.35;
-  }
-
-  header .wrap { position: relative; z-index: 1; }
-
-  .header-inner {
-    display: flex;
-    align-items: center;
-    gap: 28px;
-    flex-wrap: wrap;
-  }
-
-  .avatar {
-    width: 104px;
-    height: 104px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 2px solid rgba(239,233,218,0.5);
-    flex-shrink: 0;
-  }
-
-  .header-text { flex: 1; min-width: 220px; }
-
-  .eyebrow {
-    font-size: 13px;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    color: #C9B98F;
-    margin: 0 0 10px;
-  }
-
-  h1 {
-    font-family: Georgia, 'Times New Roman', serif;
-    font-size: 38px;
-    font-weight: 600;
-    margin: 0 0 8px;
-    letter-spacing: 0.01em;
-  }
-
-  header p.role {
-    font-size: 17px;
-    color: #D8D2C2;
-    margin: 0 0 28px;
-    max-width: 480px;
-  }
-
-  nav { display: flex; gap: 28px; flex-wrap: wrap; }
-  nav a {
-    color: #EFE9DA;
-    border-bottom: 1px solid rgba(239,233,218,0.35);
-    font-size: 14px;
-    letter-spacing: 0.03em;
-  }
-  nav a:hover { color: #C9B98F; border-bottom-color: #C9B98F; }
-
-  /* ---- Body sections ---- */
-  main { padding: 56px 0 80px; }
-
-  section { margin-bottom: 56px; }
-
-  h2 {
-    font-family: Georgia, 'Times New Roman', serif;
-    font-size: 22px;
-    font-weight: 600;
-    color: var(--deep-space);
-    margin: 0 0 20px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid var(--hairline);
-  }
-
-  .intro {
-    font-size: 17px;
-    color: var(--ink);
-    max-width: 600px;
-  }
-
-  ul.tags {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-  ul.tags li {
-    font-size: 14px;
-    padding: 7px 14px;
-    border: 1px solid var(--hairline);
-    border-radius: 999px;
-    color: var(--slate);
-  }
-
-  .project, .pub {
-    padding: 16px 0;
-    border-bottom: 1px solid var(--hairline);
-  }
-  .project:last-child, .pub:last-child { border-bottom: none; }
-
-  .project h3, .pub h3 {
-    font-size: 16px;
-    margin: 0 0 4px;
-    font-weight: 600;
-    color: var(--ink);
-  }
-  .project p, .pub p {
-    margin: 0;
-    font-size: 14.5px;
-    color: var(--slate);
-  }
-  .pub .venue {
-    font-style: italic;
-    color: var(--slate);
-  }
-
-  .status {
-    display: inline-block;
-    font-size: 11.5px;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: var(--accent);
-    margin-left: 8px;
-  }
-
-  .contact-links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 18px;
-    margin-top: 14px;
-    font-size: 15px;
-  }
-
-  footer {
-    padding: 28px 0 48px;
-    text-align: center;
-    color: var(--slate);
-    font-size: 13px;
-  }
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -219,11 +44,13 @@
         <h1>Santiago Agüí Salcedo</h1>
         <p class="role">KICP Fellow at the University of Chicago, working on the early universe, dark matter, and the large-scale structure it leaves behind.</p>
         <nav>
-          <a href="#about">About</a>
-          <a href="#research">Research</a>
-          <a href="#projects">Projects</a>
-          <a href="#publications">Publications</a>
-          <a href="#contact">Contact</a>
+          <a href="index.html" class="active">Home</a>
+          <a href="research.html">Research</a>
+          <a href="teaching.html">Teaching</a>
+          <a href="outreach.html">Outreach</a>
+          <a href="talks.html">Talks</a>
+          <a href="cv.html">CV</a>
+          <a href="contact.html">Contact</a>
         </nav>
       </div>
     </div>
@@ -249,38 +76,20 @@
     </p>
   </section>
 
-  <section id="research">
+  <section id="research-summary">
     <h2>Research Interests</h2>
     <ul class="tags">
+      <li>Cosmological Correlators</li>
+      <li>Open Systems</li>
       <li>Inflation</li>
-      <li>Primordial Non-Gaussianity</li>
       <li>Dark Matter</li>
       <li>Large-Scale Structure</li>
-      <li>Cosmological Parameter Estimation</li>
     </ul>
+    <p class="see-more">A full breakdown of my work by topic is on the <a href="research.html">Research page</a>.</p>
   </section>
 
-  <section id="projects">
-    <h2>Research Projects</h2>
-
-    <div class="project">
-      <h3>Primordial Non-Gaussianity Constraints on Dissipative Inflation</h3>
-      <p>Deriving observational constraints on non-Gaussian signatures predicted by dissipative inflationary models.</p>
-    </div>
-
-    <div class="project">
-      <h3>Decaying Dark Matter Cosmology</h3>
-      <p>Modeling the impact of dark matter decay on structure formation and late-time cosmological observables.</p>
-    </div>
-
-    <div class="project">
-      <h3>DESI BAO Analysis</h3>
-      <p>Analyzing baryon acoustic oscillation signals from DESI survey data to refine cosmological parameter estimates.</p>
-    </div>
-  </section>
-
-  <section id="publications">
-    <h2>Publications</h2>
+  <section id="featured-publications">
+    <h2>Featured Publications</h2>
 
     <div class="pub">
       <h3><a href="https://inspirehep.net/literature/2780402">Primordial Non-Gaussianity Constraints on Dissipative Inflation</a></h3>
@@ -294,31 +103,26 @@
       <p>Develops an open-system framework for inflation, modeling dissipative interactions between the inflaton and its environment.</p>
     </div>
 
-    <p style="font-size:14px; color:var(--slate); margin-top:16px;">
-      Full list on <a href="https://inspirehep.net/authors/2684254">INSPIRE-HEP</a> and <a href="https://arxiv.org/search/?searchtype=author&query=Salcedo%2C+S+A">arXiv</a>.
+    <p class="see-more">
+      Full publication list with summaries on the <a href="research.html">Research page</a>,
+      or browse <a href="https://inspirehep.net/authors/2684254">INSPIRE-HEP</a> and
+      <a href="https://arxiv.org/search/?searchtype=author&query=Salcedo%2C+S+A">arXiv</a> directly.
     </p>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Department of Astronomy &amp; Astrophysics, University of Chicago</p>
-    <div class="contact-links">
-      <a href="mailto:saguisalcedo@uchicago.edu">Email</a>
-      <a href="https://inspirehep.net/authors/2684254">INSPIRE-HEP</a>
-      <a href="https://orcid.org/0009-0003-5390-6367">ORCID</a>
-      <a href="https://github.com/agui-santi">GitHub</a>
-      <a href="https://uk.linkedin.com/in/santiagoaguisalcedo879165192">LinkedIn</a>
-      <!-- CV link hidden for now — uncomment when ready, and update the filenames to match your uploaded PDFs
-      <a href="cv-short.pdf">CV (Short)</a>
-      <a href="cv-long.pdf">CV (Full)</a>
-      -->
-    </div>
   </section>
 
 </main>
 
 <footer>
-  &copy; 2026 Santiago Agüí Salcedo
+  <div class="wrap">
+    <div class="footer-links">
+      <a href="mailto:saguisalcedo@uchicago.edu">Email</a>
+      <a href="https://inspirehep.net/authors/2684254">INSPIRE-HEP</a>
+      <a href="https://orcid.org/0009-0003-5390-6367">ORCID</a>
+      <a href="https://github.com/agui-santi">GitHub</a>
+      <a href="https://uk.linkedin.com/in/santiagoaguisalcedo879165192">LinkedIn</a>
+    </div>
+    &copy; 2026 Santiago Agüí Salcedo
+  </div>
 </footer>
 
 </body>
